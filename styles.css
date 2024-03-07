@@ -262,7 +262,13 @@ h3 {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: #191817bf;
+  background-color: rgba(25, 24, 23, 0.9);
+  transition: ease 0.5s;
+}
+
+.three-up-section:hover::before {
+  background-color: rgba(25, 24, 23, 0.8);
+  transition: ease 0.5s;
 }
 
 #three-up {
