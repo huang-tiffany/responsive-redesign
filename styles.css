@@ -279,12 +279,12 @@ h3 {
 
 #three-up h2 {
   margin-bottom: 16px;
-  background-color: rgba(25, 24, 23, 0);
+  background-color: rgba(25, 24, 23, 10%);
 }
 
 #three-up p {
   margin-bottom: 36px;
-  background-color: rgba(25, 24, 23, 0);
+  background-color: rgba(25, 24, 23, 10%);
 }
 
 .three-up-section-content {
