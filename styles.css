@@ -255,6 +255,7 @@ h3 {
   justify-content: center;
   text-align: center;
   height: 800px;
+  background-color: #191817;
 }
 
 .three-up-section::before {
