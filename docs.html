@@ -3,7 +3,255 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Docs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="docstyles.css" />
   </head>
-  <body></body>
+  <body>
+    <nav>
+      <h0>RESPONSIVE REDESIGN</h0>
+      <a href="https://en.tp-tea.com/" target="_blank">Original Site</a>
+      <a
+        href="https://huang-tiffany.github.io/responsive-redesign/"
+        target="_blank"
+        >Redesigned Site</a
+      >
+    </nav>
+
+    <div class="section">
+      <h1><sup>01</sup> Identifying Usability Problems</h1>
+      <div class="content">
+        <p>
+          For this project, I chose the website for
+          <a href="https://en.tp-tea.com/" target="_blank">TP TEA</a>, which is
+          my favorite boba store back at home; even though the user interface is
+          already pretty well-developed, I think it would be an interesting
+          challenge to further improve the webpage, particularly in bringing a
+          more technical and user-driven focus to a website that currently seems
+          to be more storytelling and aesthetic-driven.
+        </p>
+        <img alt="Screenshot" src="media/image1.png" />
+      </div>
+    </div>
+
+    <div class="section">
+      <h1><sup>02</sup> Problems</h1>
+
+      <div class="content">
+        <div class="three-up">
+          <div>
+            <h2><sup>01</sup> Efficiency</h2>
+            <p>
+              One issue with efficiency comes from the interactive components,
+              primarily the navigation bar. Upon entering the site, the bar is
+              hidden and doesn’t appear until the user starts scrolling, which
+              can be inefficient given the convention to either have the
+              navigation already displayed or to have it display on hovering
+              near the top of the site.
+              <br /><br />
+              Even if frequent users know they must scroll down to access the
+              navigation bar, doing so still costs extra time, which can slow
+              them down when they are trying to access other parts of the site.
+            </p>
+          </div>
+
+          <div>
+            <h2><sup>02</sup> Learnability</h2>
+            <p>
+              The biggest issue with learnability in this website comes from the
+              language barrier, given that some elements (like the pop-up in the
+              bottom left corner) are still written in Chinese despite being on
+              the English version of the site.
+              <br /><br />
+              This is also inconsistent with the rest of the page, since
+              everything else has been translated into English, which can lead
+              to further confusion and a feeling of discontinuity.
+              <br /><br />
+              Some animations and transitions on the homepage are inconsistent
+              as the user goes down the page, with some elements transitioning
+              after others in the same group have already loaded. With this
+              inconsistency, it becomes difficult to know when to wait for
+              things to load and when to know everything has already been
+              displayed, which can lead to a less smooth user experience.
+            </p>
+          </div>
+
+          <div>
+            <h2><sup>03</sup> Memorability</h2>
+            <p>
+              The homepage of the website is pretty long since it contains an
+              overview of each section, which can also slow users down if
+              they’re trying to get to a specific area of the site via the
+              sections on the homepage; to do so, they must read through each
+              section to figure out where the button to their desired
+              destination is located, especially because the placement of
+              buttons is often inconsistent.
+              <br /><br />
+              As a casual user, it might be easy to remember that links to the
+              other pages of the site can all be found on the homepage, yet
+              difficult to remember where those links are placed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h1><sup>03</sup> Accessibility</h1>
+      <div class="content">
+        <p>
+          Using WebAIM WAVE, a few recurring problems with the website surfaced
+          as errors: there were three images missing alternative text, seven
+          empty links, and three broken ARIA references. In addition to these 14
+          errors were a host of 42 alerts, which included problems with
+          redundant links or title text, skipped header levels, justified text,
+          and suspicious link text.
+
+          <br /><br />
+
+          Although I agree with some of the issues, like missing alt text, empty
+          links, and justified text, I didn’t agree with other alerts concerning
+          redundant links/title text and skipped header levels. For redundant
+          links/title text, it seemed like WebAIM WAVE was mostly focused on
+          individual words rather than the entire text itself. Additionally, for
+          skipped header levels, I didn’t feel that it was always necessary to
+          go in order, since having three header levels like an H1, H2, and H3
+          can impede visual hierarchy given their similarities in size.
+        </p>
+        <img alt="Screenshot from WebAIM" src="media/image2.png" />
+      </div>
+    </div>
+
+    <div class="section">
+      <h1><sup>04</sup> Speed Sketching</h1>
+      <div class="content">
+        <p>
+          For my sketches, I focused on both the structure of the page and on
+          working through sections where I felt visual hierarchy was a bit more
+          disorganized.
+        </p>
+        <img alt="Initial sketches" src="media/ideation.jpg" />
+      </div>
+    </div>
+
+    <div class="section">
+      <h1><sup>05</sup> Final Sketch</h1>
+      <div class="content">
+        <p>
+          The final sketch combined a few elements from the initial sketches,
+          with a simplified page structure and modular components. Although it
+          stayed pretty loyal to the original site, it also reorganized the
+          information in a way that was more consistent and readable.
+        </p>
+        <img alt="Final sketch" src="media/final.jpg" />
+      </div>
+    </div>
+
+    <div class="section">
+      <h1><sup>06</sup> Lofi Wireframes</h1>
+      <div class="content">
+        <p>
+          Taking these into Figma, I drew up some wireframes to resolve some of
+          the accessibility issues from before. Zoom in or open each image in a
+          new tab to see annotations.
+        </p>
+
+        <div class="three-up">
+          <div>
+            <h2><sup>01</sup> Desktop</h2>
+            <img alt="Desktop lofi wireframe" src="media/Desktop.jpg" />
+          </div>
+
+          <div>
+            <h2><sup>02</sup> Tablet</h2>
+            <img alt="Tablet lofi wireframe" src="media/Tablet.jpg" />
+          </div>
+
+          <div>
+            <h2><sup>03</sup> Mobile</h2>
+            <img alt="Mobile lofi wireframe" src="media/mobile.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h1><sup>07</sup> Style Guide</h1>
+      <div class="content">
+        <p>
+          The style guide sums up the general design direction for the hifi
+          mockups, including type, color, graphic, and interaction.
+        </p>
+        <img src="media/style guide.jpg" alt="Style guide" />
+      </div>
+    </div>
+
+    <div class="section">
+      <h1><sup>08</sup> Hifi Mockups</h1>
+      <div class="content">
+        <p>
+          Each of the hifi mockups goes into more detail on the designs for each
+          screen size, based on the lofi wireframes.
+        </p>
+
+        <div class="three-up">
+          <div>
+            <h2><sup>01</sup> Desktop</h2>
+            <img alt="Desktop lofi wireframe" src="media/Laptop hifi.jpg" />
+          </div>
+
+          <div>
+            <h2><sup>02</sup> Tablet</h2>
+            <img alt="Tablet lofi wireframe" src="media/Tablet hifi.jpg" />
+          </div>
+
+          <div>
+            <h2><sup>03</sup> Mobile</h2>
+            <img alt="Mobile lofi wireframe" src="media/Mobile hifi.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h1><sup>09</sup> Responsive Redesign</h1>
+      <div class="content">
+        <p>
+          The
+          <a
+            href="https://huang-tiffany.github.io/responsive-redesign/"
+            target="_blank"
+            >FINAL REDESIGN</a
+          >
+          implements all of the hifi designs from before, with some minor tweaks
+          to spacing to adapt to real-life sizing. The only issues that surfaced
+          in WebAIM were ones concerning repetitive alt text, but I wanted to
+          keep the content of the alt text related to the drinks featured in the
+          Menu section; however, given that all of these are drinks (many of
+          them milk teas), WebAIM likely found issue with the duplicate labels.
+        </p>
+        <img src="media/webaim.png" alt="WebAIM screenshot of final page" />
+      </div>
+    </div>
+
+    <div class="section">
+      <h1><sup>10</sup> Notes</h1>
+      <div class="content">
+        <p>
+          Overall, it was a pretty fun experience redesigning and coding a
+          website that I was somewhat familiar with before. Even though I have
+          had a decent amount of frontend and UI/UX experience, I still felt
+          like I was able to learn some more CSS techniques that I hadn't known
+          before, and seeing this website through a more accessibility-focused
+          lens rather than one that was more graphic design-focused was also
+          interesting as well.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
